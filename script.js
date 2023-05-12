@@ -62,12 +62,23 @@ user[`city of residence`] = `Tyumen`;
 console.log(user);*/
 
 //Задание 9.2
-let user = {
+/*let user = {
     name: `Nadya`,
     age: 34,
     isAdmin: true,
-}
+};
 Object.defineProperty(user, 'age', {
     value: 33,
   });
-  console.log(user.age);
+  console.log(user.age);*/
+
+  //Задание 9.3
+  let user = {
+    name: `Nadya`,
+    age: 34,
+    isAdmin: true,
+};
+user.age = 27;
+user[`city of residence`] = `Tyumen`;
+delete user[`city of residence`];
+console.log(user);
