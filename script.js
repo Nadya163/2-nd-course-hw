@@ -53,10 +53,21 @@ alert(age);*/
 console.log(user);*/
 
 //Задание 9.1
-let user = {
+/*let user = {
     name: `Nadya`,
     age: 34,
     isAdmin: true,
 };
 user[`city of residence`] = `Tyumen`;
-console.log(user);
+console.log(user);*/
+
+//Задание 9.2
+let user = {
+    name: `Nadya`,
+    age: 34,
+    isAdmin: true,
+}
+Object.defineProperty(user, 'age', {
+    value: 33,
+  });
+  console.log(user.age);
