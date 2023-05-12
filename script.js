@@ -41,5 +41,12 @@ num -= 1;
 alert(num);*/
 
 //Задание 8
-let age = prompt(`Сколько вам лет?`);
-alert(age);
+/*let age = prompt(`Сколько вам лет?`);
+alert(age);*/
+
+//Задание 9.0
+let user = {
+    name: `Nadya`,
+    age: 34,
+    isAdmin: true,
+};
