@@ -84,10 +84,14 @@ delete user[`city of residence`];
 console.log(user);*/
 
 //Задание 9.4
-let info = prompt(`Какую информацию хотите узнать о пользователе?`, `age`);
+/*let info = prompt(`Какую информацию хотите узнать о пользователе?`, `age`);
 let user = {
     name: `Nadya`,
     age: 27,
     isAdmin: true,
 };
-alert(user[info]);
+alert(user[info]);*/
+
+//Задание 10
+let name = prompt(`Тебя зовут?`)
+alert(`Привет, ${name}!`)
