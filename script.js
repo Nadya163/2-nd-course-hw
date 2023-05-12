@@ -73,7 +73,7 @@ Object.defineProperty(user, 'age', {
   console.log(user.age);*/
 
   //Задание 9.3
-  let user = {
+/*let user = {
     name: `Nadya`,
     age: 34,
     isAdmin: true,
@@ -81,4 +81,13 @@ Object.defineProperty(user, 'age', {
 user.age = 27;
 user[`city of residence`] = `Tyumen`;
 delete user[`city of residence`];
-console.log(user);
+console.log(user);*/
+
+//Задание 9.4
+let info = prompt(`Какую информацию хотите узнать о пользователе?`, `age`);
+let user = {
+    name: `Nadya`,
+    age: 27,
+    isAdmin: true,
+};
+alert(user[info]);
