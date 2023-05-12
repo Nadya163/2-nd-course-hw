@@ -45,8 +45,18 @@ alert(num);*/
 alert(age);*/
 
 //Задание 9.0
+/*let user = {
+    name: `Nadya`,
+    age: 34,
+    isAdmin: true,
+};
+console.log(user);*/
+
+//Задание 9.1
 let user = {
     name: `Nadya`,
     age: 34,
     isAdmin: true,
 };
+user[`city of residence`] = `Tyumen`;
+console.log(user);
