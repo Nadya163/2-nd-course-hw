@@ -24,6 +24,9 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    &__text-mob {
+        display: none;
+    }
 }
 
 .title {
@@ -117,3 +120,5 @@ a {
     width: 379px;
     background-image: url(img/game3.jpg);
 }
+
+@import 'mob';

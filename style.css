@@ -25,6 +25,9 @@ a {
   background-position: center;
   background-size: cover;
 }
+.top__text-mob {
+  display: none;
+}
 
 .title {
   font-weight: 700;
@@ -116,4 +119,47 @@ a {
 .game__item3 {
   width: 379px;
   background-image: url(img/game3.jpg);
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+    background-image: url(img/bg_mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .top__mob {
+    margin-top: 39.95px;
+  }
+  .top__text-mob {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top__text-box {
+    display: none;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 238.69px;
+  }
+  .buttonStart {
+    margin-left: 54.47px;
+  }
+  .game__item {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
