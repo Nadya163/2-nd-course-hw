@@ -61,16 +61,25 @@
 // }
 
 //Задание 7
-let num = prompt('Пожалуйста, введите любое число');
+//let num = prompt('Пожалуйста, введите любое число');
 
 //console.log(parseFloat(num)); Второй вариант проверки
 
-if (num != 'NaN' && num % 2 === 0) {
-     alert(`${num},Число четное`);
-} else if (num != 'NaN' && num % 2 != 0) {
-    alert(`${num}, число не четное`);
-} else {
-     alert(parseFloat(num));
-}
+// if (num != 'NaN' && num % 2 === 0) {
+//      alert(`${num},Число четное`);
+// } else if (num != 'NaN' && num % 2 != 0) {
+//     alert(`${num}, число не четное`);
+// } else {
+//      alert(parseFloat(num));
+// }
 
 //Задание 8
+let clientOS = Number(prompt('Введите "0" если у вас iOS или "1" - Android'));
+
+if (clientOS === 0) {
+    alert('Установите версию приложения для iOS по ссылке');
+} else if (clientOS === 1) {
+    alert('Установите версию приложения для Android по ссылке');
+} else {
+    alert('Не верно ввели данные');
+}
