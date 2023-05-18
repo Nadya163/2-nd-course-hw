@@ -59,3 +59,18 @@
 //         console.log('Нет такого месяца!');
 //         break;
 // }
+
+//Задание 7
+let num = prompt('Пожалуйста, введите любое число');
+
+//console.log(parseFloat(num)); Второй вариант проверки
+
+if (num != 'NaN' && num % 2 === 0) {
+     alert(`${num},Число четное`);
+} else if (num != 'NaN' && num % 2 != 0) {
+    alert(`${num}, число не четное`);
+} else {
+     alert(parseFloat(num));
+}
+
+//Задание 8
