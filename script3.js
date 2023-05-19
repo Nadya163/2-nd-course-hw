@@ -34,8 +34,8 @@
 // }
 
 //Задание 5
-let n = 1000, a= 0;
-let num = a;
+let n = 1000;
+let num = 0;
 while(n >= 50){
     n = n/2;
   num++;
