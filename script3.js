@@ -34,10 +34,20 @@
 // }
 
 //Задание 5
-let n = 1000;
-let num = 0;
-while(n >= 50){
-    n = n/2;
-  num++;
-}
-    console.log("Итераций: " + num +", получилось число " + n);
+// let n = 1000;
+// let num = 0;
+// while(n >= 50){
+//     n = n/2;
+//   num++;
+// }
+//     console.log("Итераций: " + num +", получилось число " + n);
+
+//Задание 6
+let fridayReport = 5;
+for (let fridayReport = 5; fridayReport <= 31; fridayReport++) { 
+      if (fridayReport % 5 === 0) {
+          console.log(`Сегодня пятница,${fridayReport}-е число. Необходимо подготовить отчет.`); 
+          continue; 
+      }
+      console.log("Никаких отчетов на сегодня"); 
+  }
