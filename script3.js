@@ -44,10 +44,12 @@
 
 //Задание 6
 let fridayReport = 5;
-for (let fridayReport = 5; fridayReport <= 31; fridayReport++) { 
-      if (fridayReport % 5 === 0) {
-          console.log(`Сегодня пятница,${fridayReport}-е число. Необходимо подготовить отчет.`); 
-          continue; 
-      }
-      console.log("Никаких отчетов на сегодня"); 
-  }
+
+while (fridayReport < 31) {
+    console.log(`Сегодня пятница,${fridayReport}-е число. Необходимо подготовить отчет.`);
+    fridayReport += 7;
+    if (fridayReport > 31) {
+        console.log("Никаких отчетов на сегодня");
+        break;
+    }
+}
