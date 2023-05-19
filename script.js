@@ -93,5 +93,5 @@ let user = {
 alert(user[info]);*/
 
 //Задание 10
-let name = prompt(`Тебя зовут?`)
-alert(`Привет, ${name}!`)
+/*let name = prompt(`Тебя зовут?`)
+alert(`Привет, ${name}!`)*/
