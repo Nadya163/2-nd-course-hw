@@ -20,15 +20,24 @@
 // }
 
 //Задание 4
-let obj = {
-    "Коля": 200,
-    "Вася": 300,
-    "Петя": 400
-}
+// let obj = {
+//     "Коля": 200,
+//     "Вася": 300,
+//     "Петя": 400
+// }
 
-for (let key in obj) {
-	if (obj[key]) {
-        let salary = obj[key];
-		console.log(`${key} - зарплата ${salary} долларов`);
-    }
+// for (let key in obj) {
+// 	if (obj[key]) {
+//         let salary = obj[key];
+// 		console.log(`${key} - зарплата ${salary} долларов.`);
+//     }
+// }
+
+//Задание 5
+let n = 1000, a= 0;
+let num = a;
+while(n >= 50){
+    n = n/2;
+  num++;
 }
+    console.log("Итераций: " + num +", получилось число " + n);
