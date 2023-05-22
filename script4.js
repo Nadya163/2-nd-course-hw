@@ -19,8 +19,15 @@
 // numValue();
 
 //Задание 3.1
+// function number(num) {
+//     console.log(num * num);
+//   }
+   
+//   number(15);
+
+//Задание 3.2
 function number(num) {
-    console.log(num * num);
+    return num ** 2;
   }
    
-  number(15);
+  number(25);
