@@ -26,8 +26,23 @@
 //   number(15);
 
 //Задание 3.2
-function number(num) {
-    return num ** 2;
-  }
+// function number(num) {
+//     return num ** 2;
+//   }
    
-  number(25);
+//   number(25);
+
+//Задание 4
+let age = Number(prompt('Введите свой возраст'));
+
+function checkAge(age) {
+    if (age <= 12 && age >= 0) {
+        return 'Привет, друг!';
+    } else if (age >= 13 && age >= 0) {
+        return 'Добро пожаловать!';
+    } else {
+        return 'Вы ввели неправильное значение';
+    }
+}
+
+alert(checkAge(age));
