@@ -48,25 +48,25 @@
 // alert(checkAge(age));
 
 //Задание 5
-function num(a, b) {
-    if (isNaN(a) && isNaN(b)) {
-        return 'Одно или оба значения не являются числом';
-    } else {
-        return a * b;
-    }
-}
-
-console.log(num(13, 5));
-
-//Задание 6
-// let n = prompt('Введите число');
-
-// function numberCheck(n) {
-//     if (Number(n)) {
-//         return `${n} в кубе равняется (n ** 3)`;
+// function num(a, b) {
+//     if (isNaN(a) && isNaN(b)) {
+//         return 'Одно или оба значения не являются числом';
 //     } else {
-//         return 'Переданный параметр не является числом';
+//         return a * b;
 //     }
 // }
 
-// alert(numberCheck(n));
+// console.log(num(13, 5));
+
+//Задание 6
+let n = prompt('Введите число');
+
+function numberCheck(n) {
+    if (isNaN(n)) { 
+        return 'Переданный параметр не является числом';
+    }   else {
+        return `n в кубе равняется ${(n ** 3)}`;
+    }
+}
+
+alert(numberCheck(n));
