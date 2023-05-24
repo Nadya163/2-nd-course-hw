@@ -57,3 +57,16 @@ function num(a, b) {
 }
 
 console.log(num(13, 5));
+
+//Задание 6
+// let n = prompt('Введите число');
+
+// function numberCheck(n) {
+//     if (Number(n)) {
+//         return `${n} в кубе равняется (n ** 3)`;
+//     } else {
+//         return 'Переданный параметр не является числом';
+//     }
+// }
+
+// alert(numberCheck(n));
