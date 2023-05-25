@@ -5,13 +5,45 @@
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     background-color:#000915;
 }
 
 a {
     text-decoration: none;
   }
+
+  @keyframes heartbeat {
+    from {
+        transform                : scale(1);
+        transform-origin         : center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform                : scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform                : scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform                : scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform                : scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+
+$trans : all .8s linear;
+$anima : heartbeat 1.5s ease-in-out infinite both;
 
 .center {
     padding-left: calc(50% - 600px);
@@ -50,6 +82,10 @@ a {
     color:#FFFFFF;
 }
 
+.button-box {
+    margin-top: 44px;
+}
+
 .buttonStart {
     width: 234.06px;
     height: 48.6px;
@@ -57,11 +93,16 @@ a {
     top: 482.11px;
     background: #9C0332;
     border-radius: 30px;
-    margin-top: 44px;
 }
 
 .buttonStart:hover {
     cursor: url(img/Cursor.svg), pointer;
+}
+
+.buttonStart:active {
+    background-color: #EB443F;
+    transform: scale(1.03);
+;
 }
 
 .button__text {
@@ -103,7 +144,9 @@ a {
 
 .game__item:hover {
     cursor: url(img/Cursor.svg), pointer;
-    border: 3px solid #44D2FF;;
+    border: 3px solid #44D2FF;
+    transition: $trans;
+    scale: 1.1;
 }
 
 .game__item1 {
@@ -119,6 +162,47 @@ a {
 .game__item3 {
     width: 379px;
     background-image: url(img/game3.jpg);
+}
+
+.play {
+    &-box {
+        display: flex;
+        align-items: center;
+        gap: 130px;
+        padding-top: 233.5px;
+        padding-bottom: 233.5px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    &__gameText {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-top: 32px;
+    }
+    &__button {
+        margin-top: 32px;
+    }
+}
+
+.playImg {
+    width: 485px;
+    height: 333px;
+}
+
+.play-mob {
+    display: none;
 }
 
 @import 'mob';
