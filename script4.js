@@ -72,29 +72,29 @@
 // alert(numberCheck(n));
 
 // Задание 7
-// function getCircleArea(radius) {
-//     return 3.14 * this.radius * this.radius;
-// }
+function getCircleArea(radius) {
+    return 3.14 * this.radius * this.radius;
+}
 
-// function getCirclePerimeter() {
-//     return 2 * 3.14 * this.radius;
-// }
+function getCirclePerimeter() {
+    return 2 * 3.14 * this.radius;
+}
 
-// let circl1 = {
-//     radius: 13,
+let circl1 = {
+    radius: 13,
 
-//     getArea: getCircleArea,
-//     getPerimeter: getCirclePerimeter
-// }
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter
+}
 
-// let circl2 = {
-//     radius: 6,
+let circl2 = {
+    radius: 6,
 
-//     getArea: getCircleArea,
-//     getPerimeter: getCirclePerimeter
-// }
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter
+}
 
-// console.log(circl1.getArea());
-// console.log(circl1.getPerimeter());
-// console.log(circl2.getArea());
-// console.log(circl2.getPerimeter());
+console.log(circl1.getArea());
+console.log(circl1.getPerimeter());
+console.log(circl2.getArea());
+console.log(circl2.getPerimeter());
