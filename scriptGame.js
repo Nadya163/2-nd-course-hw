@@ -13,3 +13,4 @@ let month = Number(prompt('Введите номер месяца'));
       console.log('Таких данных нет');
     }
   };
+
