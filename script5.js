@@ -57,9 +57,16 @@
 // console.log(word);
 
 // Задача 9
-let mass = [[1, 2, 3],
-            [4, 5, 6]
-        ];
+// let mass = [[1, 2, 3],
+//             [4, 5, 6]
+//         ];
 
-let result = [].concat(mass[0],mass[1]);
-console.log(result);
+// let result = [].concat(mass[0],mass[1]);
+// console.log(result);
+
+// Задача 10
+let arr = [5, 7, 3, 8, 1];
+console.log(arr);
+for (let i = 0; i < arr.length - 1; i++) {
+    arr[i] += arr[i + 1];
+  }

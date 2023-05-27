@@ -14,13 +14,6 @@ let month = Number(prompt('Введите номер месяца'));
     }
   };
 
-// // Задача 10
-// let arr = [5, 7, 3, 8, 1];
-// console.log(arr);
-// for (let i = 0; i < arr.length - 1; i++) {
-//     arr[i] += arr[i + 1];
-//   }
-
 // const arr = [1, 2, 3, 4, 5];
 
 // let result = arr.map(item => (item ** 2));
