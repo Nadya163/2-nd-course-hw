@@ -34,8 +34,18 @@
 // console.log(numbers);
 
 // Задача 6
-const numders = [9, 8, 7, 'a', 6, 5];
+// const numders = [9, 8, 7, 'a', 6, 5];
 
-numbers = numders.sort();
-numbers = numbers.pop();
-console.log(numders);
+// numbers = numders.sort();
+// numbers = numbers.pop();
+// console.log(numders);
+
+// Задача 7
+const arr = [9, 8, 7, 6, 5];
+let number = prompt('Введите число от 1 до 10');
+
+if (arr.includes(parseInt(number))) {
+  console.log("Число находится в массиве");
+} else {
+  console.log("Число отсутствует в массиве");
+}
