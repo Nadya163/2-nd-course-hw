@@ -167,6 +167,7 @@ $anima : heartbeat 1.5s ease-in-out infinite both;
 .play {
     &-box {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 130px;
         padding-top: 233.5px;
@@ -206,3 +207,4 @@ $anima : heartbeat 1.5s ease-in-out infinite both;
 }
 
 @import 'mob';
+@import 'tablet'

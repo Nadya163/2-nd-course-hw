@@ -15,15 +15,20 @@
 // arr = arr.join(' ');
 
 // Задача 4
-let arr = [];
+// let arr = [];
 
-for (let i = 0; i < 3; i++) {
-	arr[i] = [];
+// for (let i = 0; i < 3; i++) {
+// 	arr[i] = [];
 	
-	for (let j = 0; j < 3; j++) {
-		arr[i].push(1);
-	}
-}
+// 	for (let j = 0; j < 3; j++) {
+// 		arr[i].push(1);
+// 	}
+// }
 
-console.log(arr);
+// console.log(arr);
 
+// Задача 5
+const numbers = [1, 1, 1];
+
+numbers.push(2, 2, 2);
+console.log(numbers);

@@ -1,8 +1,8 @@
-@media (max-width: 375px) {
+@media (max-width: 426px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+        padding-left: calc(50% - 171px);
+        padding-right: calc(50% - 171px);
+      }
 
     .top {
         height: 735px;
