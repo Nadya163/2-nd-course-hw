@@ -14,10 +14,6 @@ let month = Number(prompt('Введите номер месяца'));
     }
   };
 
-// const arr = [1, 2, 3, 4, 5];
-
-// let result = arr.map(item => (item ** 2));
-// console.log(result);
 
 // Вариант 2
 // for (const element of arr) {

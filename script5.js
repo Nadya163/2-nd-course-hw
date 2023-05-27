@@ -65,8 +65,14 @@
 // console.log(result);
 
 // Задача 10
-let arr = [5, 7, 3, 8, 1];
-console.log(arr);
-for (let i = 0; i < arr.length - 1; i++) {
-    arr[i] += arr[i + 1];
-  }
+// let arr = [5, 7, 3, 8, 1];
+// console.log(arr);
+// for (let i = 0; i < arr.length - 1; i++) {
+//     arr[i] += arr[i + 1];
+//   }
+
+// Задача 11
+const arr = [4, 3, 6, 9, 5];
+
+let result = arr.map(item => (item ** 2));
+console.log(result);
