@@ -78,7 +78,15 @@
 // console.log(result);
 
 // Задача 12
-const str = ['слово', 'солнце', 'лор', 'котопес'];
+// const str = ['слово', 'солнце', 'лор', 'котопес'];
 
-const getLength = source => source.map(str => str.length);
-console.log(getLength(['слово', 'солнце', 'лор', 'котопес']));
+// const getLength = source => source.map(str => str.length);
+// console.log(getLength(['слово', 'солнце', 'лор', 'котопес']));
+
+// Задача 13
+function filterPositive(array) {
+    return array.filter (array => array < 0);
+  }
+  
+  console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+  console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
