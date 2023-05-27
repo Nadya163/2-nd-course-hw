@@ -15,12 +15,6 @@ let month = Number(prompt('Введите номер месяца'));
   };
 
 
-// Вариант 2
-// for (const element of arr) {
-//   // Code to be executed for each element
-//   console.log(element** 2);
-// }
-
 // let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
 
 // let res = arr.filter(function(elem) {
@@ -32,8 +26,3 @@ let month = Number(prompt('Введите номер месяца'));
 // });
 
 // console.log(res);
-
-
-// const getLength = source => source.map(str => str.length);
-
-// console.log(getLength(['one', 'sound', 'underground']));

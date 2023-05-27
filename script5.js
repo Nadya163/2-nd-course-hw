@@ -72,7 +72,13 @@
 //   }
 
 // Задача 11
-const arr = [4, 3, 6, 9, 5];
+// const arr = [4, 3, 6, 9, 5];
 
-let result = arr.map(item => (item ** 2));
-console.log(result);
+// let result = arr.map(item => (item ** 2));
+// console.log(result);
+
+// Задача 12
+const str = ['слово', 'солнце', 'лор', 'котопес'];
+
+const getLength = source => source.map(str => str.length);
+console.log(getLength(['слово', 'солнце', 'лор', 'котопес']));
