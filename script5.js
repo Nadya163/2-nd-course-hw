@@ -51,7 +51,15 @@
 // }
 
 // Задача 8
-let word = 'abcdef';
+// let word = 'abcdef';
 
-word = word.split("").reverse().join("");
-console.log(word);
+// word = word.split("").reverse().join("");
+// console.log(word);
+
+// Задача 9
+let mass = [[1, 2, 3],
+            [4, 5, 6]
+        ];
+
+let result = [].concat(mass[0],mass[1]);
+console.log(result);
