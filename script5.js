@@ -28,7 +28,14 @@
 // console.log(arr);
 
 // Задача 5
-const numbers = [1, 1, 1];
+// const numbers = [1, 1, 1];
 
-numbers.push(2, 2, 2);
-console.log(numbers);
+// numbers.push(2, 2, 2);
+// console.log(numbers);
+
+// Задача 6
+const numders = [9, 8, 7, 'a', 6, 5];
+
+numbers = numders.sort();
+numbers = numbers.pop();
+console.log(numders);
