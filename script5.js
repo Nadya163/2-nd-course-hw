@@ -92,18 +92,30 @@
 //   console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
 
 // Задача 14
+//   const arr = [];
+//   const newArr = [];
+
+//   for (let i = 0; i < 10; i ++) {
+//     newArr.push(Math.floor(Math.random() * 11));
+//   }
+
+//   for (let i = 0; i < newArr.length; i ++) {
+//     if (newArr[i] % 2 === 0) {
+//        arr.push(newArr[i]);
+//     }
+//   }
+
+//   console.log("Первый массив:", newArr);
+//   console.log("Второй массив:", arr);
+
+// Задача 15
   const arr = [];
   const newArr = [];
 
-  for (let i = 0; i < 10; i ++) {
+  for (let i = 0; i < 6; i ++) {
     newArr.push(Math.floor(Math.random() * 11));
   }
+  
+  const averageArr = (newArr) => newArr.reduce((acc, newArr) => acc + newArr, 0) / newArr.length;
 
-  for (let i = 0; i < newArr.length; i ++) {
-    if (newArr[i] % 2 === 0) {
-       arr.push(newArr[i]);
-    }
-  }
-
-  console.log("Первый массив:", newArr);
-  console.log("Второй массив:", arr);
+  console.log(averageArr(newArr));
