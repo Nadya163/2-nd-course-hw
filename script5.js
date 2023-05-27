@@ -41,11 +41,17 @@
 // console.log(numders);
 
 // Задача 7
-const arr = [9, 8, 7, 6, 5];
-let number = prompt('Введите число от 1 до 10');
+// const arr = [9, 8, 7, 6, 5];
+// let number = prompt('Введите число от 1 до 10');
 
-if (arr.includes(parseInt(number))) {
-  console.log("Число находится в массиве");
-} else {
-  console.log("Число отсутствует в массиве");
-}
+// if (arr.includes(parseInt(number))) {
+//   console.log("Число находится в массиве");
+// } else {
+//   console.log("Число отсутствует в массиве");
+// }
+
+// Задача 8
+let word = 'abcdef';
+
+word = word.split("").reverse().join("");
+console.log(word);
