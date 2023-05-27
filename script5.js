@@ -84,9 +84,26 @@
 // console.log(getLength(['слово', 'солнце', 'лор', 'котопес']));
 
 // Задача 13
-function filterPositive(array) {
-    return array.filter (array => array < 0);
-  }
+// function filterPositive(array) {
+//     return array.filter(array => array < 0);
+//   }
   
-  console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
-  console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+//   console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+//   console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+
+// Задача 14
+  const arr = [];
+  const newArr = [];
+
+  for (let i = 0; i < 10; i ++) {
+    newArr.push(Math.floor(Math.random() * 11));
+  }
+
+  for (let i = 0; i < newArr.length; i ++) {
+    if (newArr[i] % 2 === 0) {
+       arr.push(newArr[i]);
+    }
+  }
+
+  console.log("Первый массив:", newArr);
+  console.log("Второй массив:", arr);
