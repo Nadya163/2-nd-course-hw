@@ -61,11 +61,19 @@
 // console.log(random(3, 9));
 
 // Задание 8
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+// "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-let myDate = new Date(); 
-let fullDate = "Сегодняшняя дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+// let myDate = new Date(); 
+// let fullDate = "Сегодняшняя дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
 
-console.log(fullDate); 
+// console.log(fullDate); 
+
+// Задание 9
+const currentDate = new Date();
+const futureDate = new Date();
+futureDate.setDate(currentDate.getDate() + 73);
+
+console.log(Date());
+console.log(futureDate);
