@@ -71,9 +71,19 @@
 // console.log(fullDate); 
 
 // Задание 9
-const currentDate = new Date();
-const futureDate = new Date();
-futureDate.setDate(currentDate.getDate() + 73);
+// const currentDate = new Date();
+// const futureDate = new Date();
+// futureDate.setDate(currentDate.getDate() + 73);
 
-console.log(Date());
-console.log(futureDate);
+// console.log(Date());
+// console.log(futureDate);
+
+//Задание 10
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate = new Date(); 
+let fullDate = "Сегодняшняя дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + ", " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+
+console.log(fullDate); 
