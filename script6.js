@@ -42,16 +42,20 @@
 // console.log(randomNum());
 
 // Задание 6
-function getRandomArray(num) {
-    const randomArr = []
-    const arrLength = num / 2
+// function getRandomArray(num) {
+//     const randomArr = []
+//     const arrLength = num / 2
   
-    for (let i = 0; i < arrLength; i++) {
-      const randomNum = Math.floor(Math.random() * num)
-      randomArr.push(randomNum)
-    }
+//     for (let i = 0; i < arrLength; i++) {
+//       const randomNum = Math.floor(Math.random() * num)
+//       randomArr.push(randomNum)
+//     }
   
-    return randomArr
-  }
+//     return randomArr
+//   }
   
-  console.log(getRandomArray(8));
+//   console.log(getRandomArray(8));
+
+// Задание 7
+const random = (o, a) => Math.floor(Math.random() * (a - o + 1)) + o;
+console.log(random(3, 9));
