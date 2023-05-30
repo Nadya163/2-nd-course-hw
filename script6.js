@@ -15,10 +15,22 @@
 // strAndArr(['Сорока', 'Дом', 'Сор', 'Иррациональный', 'Соловей', 'Табурет'], 'со');
 
 // Задание 3
-num = Math.floor(32.58884);
-a = Math.ceil(32.58884);
-b = Math.round(32.58884);
+// num = Math.floor(32.58884);
+// a = Math.ceil(32.58884);
+// b = Math.round(32.58884);
 
-console.log(num);
-console.log(a);
-console.log(b);
+// console.log(num);
+// console.log(a);
+// console.log(b);
+
+// Задание 4
+let min = function(numbers) {
+    return Math.min(...numbers);
+}
+
+let max = function(numbers) {
+    return Math.max(...numbers);
+}
+
+console.log(min([52, 53, 49, 77, 21, 32]));
+console.log(max([52, 53, 49, 77, 21, 32]));
