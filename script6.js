@@ -36,7 +36,22 @@
 // console.log(max([52, 53, 49, 77, 21, 32]));
 
 // Задание 5
-function randomNum() {
-    return Math.round((Math.random() * 10) + 1);
-}
-console.log(randomNum());
+// function randomNum() {
+//     return Math.round((Math.random() * 10) + 1);
+// }
+// console.log(randomNum());
+
+// Задание 6
+function getRandomArray(num) {
+    const randomArr = []
+    const arrLength = num / 2
+  
+    for (let i = 0; i < arrLength; i++) {
+      const randomNum = Math.floor(Math.random() * num)
+      randomArr.push(randomNum)
+    }
+  
+    return randomArr
+  }
+  
+  console.log(getRandomArray(8));
