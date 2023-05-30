@@ -24,13 +24,19 @@
 // console.log(b);
 
 // Задание 4
-let min = function(numbers) {
-    return Math.min(...numbers);
-}
+// let min = function(numbers) {
+//     return Math.min(...numbers);
+// }
 
-let max = function(numbers) {
-    return Math.max(...numbers);
-}
+// let max = function(numbers) {
+//     return Math.max(...numbers);
+// }
 
-console.log(min([52, 53, 49, 77, 21, 32]));
-console.log(max([52, 53, 49, 77, 21, 32]));
+// console.log(min([52, 53, 49, 77, 21, 32]));
+// console.log(max([52, 53, 49, 77, 21, 32]));
+
+// Задание 5
+function randomNum() {
+    return Math.round((Math.random() * 10) + 1);
+}
+console.log(randomNum());
