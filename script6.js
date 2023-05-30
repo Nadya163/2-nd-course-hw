@@ -57,5 +57,15 @@
 //   console.log(getRandomArray(8));
 
 // Задание 7
-const random = (o, a) => Math.floor(Math.random() * (a - o + 1)) + o;
-console.log(random(3, 9));
+// const random = (o, a) => Math.floor(Math.random() * (a - o + 1)) + o;
+// console.log(random(3, 9));
+
+// Задание 8
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate = new Date(); 
+let fullDate = "Сегодняшняя дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()];
+
+console.log(fullDate); 
