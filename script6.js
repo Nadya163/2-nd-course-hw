@@ -2,6 +2,7 @@
 // console.log('Hello word'.toUpperCase());
 
 // Задание 2
+//// Вариант 1
 // function strAndArr(arr, str) {
 //     let newArr = [];
 //     arr.forEach((el) => {
@@ -13,6 +14,15 @@
 // }
 
 // strAndArr(['Сорока', 'Дом', 'Сор', 'Иррациональный', 'Соловей', 'Табурет'], 'со');
+
+//// Вариант 2
+function filterByPrefix(arr, prefix) {
+    const regex = new RegExp(`^${prefix}`, "i");
+    return arr.filter((str) => regex.test(str));
+  }
+  
+  filterByPrefix(["Рука", "Жук", "Конек", "Карусель", "Дубинка", "Каблук"],"ка");
+  console.log(filterByPrefix(["Рука", "Жук", "Конек", "Карусель", "Дубинка", "Каблук"],"ка"));
 
 // Задание 3
 // num = Math.floor(32.58884);
@@ -79,11 +89,11 @@
 // console.log(futureDate);
 
 //Задание 10
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+// "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-let myDate = new Date(); 
-let fullDate = "Сегодняшняя дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + ", " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+// let myDate = new Date(); 
+// let fullDate = "Сегодняшняя дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + ", " + days[myDate.getDay()] + ", " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
 
-console.log(fullDate); 
+// console.log(fullDate); 
