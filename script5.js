@@ -2,7 +2,7 @@
 // const num = [1, 5, 4, 10, 0, 3];
 
 // for (let i = 0; i < num.length; i++) {
-//     if (num[i] === 10) break;
+//     if (num[i] <= 10) break;
 //     console.log(num[i]); 
 // }
 
@@ -57,7 +57,7 @@
 // console.log(word);
 
 // Задача 9
-// let mass = [[1, 2, 3],
+// let mass = [[1, 2, 3], // Попробовать через flat
 //             [4, 5, 6]
 //         ];
 

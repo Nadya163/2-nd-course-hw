@@ -162,6 +162,11 @@ a {
   padding-top: 233.5px;
   padding-bottom: 233.5px;
 }
+.play__info {
+  display: flex;
+  width: 584px;
+  flex-wrap: wrap;
+}
 .play__text {
   font-style: normal;
   font-weight: 700;
@@ -188,6 +193,12 @@ a {
 .playImg {
   width: 485px;
   height: 333px;
+}
+
+.playImg:hover {
+  cursor: url(img/Cursor.svg), pointer;
+  transition: all 0.8s linear;
+  scale: 1.1;
 }
 
 .play-mob {
@@ -242,6 +253,12 @@ a {
     padding-bottom: 85px;
     flex-wrap: wrap;
   }
+  .play__info {
+    width: 343px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .play__text {
     font-size: 32px;
     line-height: 39px;
@@ -267,5 +284,108 @@ a {
     display: block;
     width: 344px;
     height: 236px;
+  }
+  .play-mob:hover {
+    cursor: url(img/Cursor.svg), pointer;
+    transition: all 0.8s linear;
+    scale: 1.1;
+  }
+}
+.playFruits {
+  padding-top: 239px;
+  padding-bottom: 239px;
+}
+.playFruits__info {
+  width: 588px;
+}
+.playFruits__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.playFruits__gameText {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+
+.playFruitsBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+  align-items: center;
+}
+
+.playFruitsImg {
+  width: 481px;
+  height: 322px;
+}
+
+.playFruitsImg:hover {
+  cursor: url(img/Cursor.svg), pointer;
+  transition: all 0.8s linear;
+  scale: 1.1;
+}
+
+.playFruitsImg-mob {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  .playFruitsBox {
+    display: flex;
+    gap: 64px;
+  }
+  .playFruits {
+    padding-top: 51px;
+    padding-bottom: 90px;
+  }
+  .playFruits__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 343px;
+  }
+  .playFruits__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .playFruits__gameText {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .playFruitsImg {
+    display: none;
+  }
+  .playFruitsImg-mob {
+    display: block;
+    width: 344px;
+    height: 241px;
+  }
+  .playFruitsImg-mob {
+    cursor: url(img/Cursor.svg), pointer;
+    transition: all 0.8s linear;
+    scale: 1.1;
   }
 }/*# sourceMappingURL=style.css.map */

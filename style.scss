@@ -173,6 +173,11 @@ $anima : heartbeat 1.5s ease-in-out infinite both;
         padding-top: 233.5px;
         padding-bottom: 233.5px;
     }
+    &__info {
+        display: flex;
+        width: 584px;
+        flex-wrap: wrap;
+    }
     &__text {
         font-style: normal;
         font-weight: 700;
@@ -201,10 +206,18 @@ $anima : heartbeat 1.5s ease-in-out infinite both;
     width: 485px;
     height: 333px;
 }
+.playImg:hover {
+    cursor: url(img/Cursor.svg), pointer;
+    transition: $trans;
+    scale: 1.1;
+}
 
 .play-mob {
     display: none;
 }
 
+
+
 @import 'mob';
-@import 'tablet'
+@import 'game2';
+@import 'mobGame2';

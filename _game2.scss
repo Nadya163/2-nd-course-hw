@@ -1,0 +1,46 @@
+.playFruits {
+    padding-top: 239px;
+    padding-bottom: 239px;
+    &__info {
+        width: 588px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    &__gameText {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-top: 32px;
+    }
+}
+.playFruitsBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    align-items: center;
+}
+
+.playFruitsImg {
+    width: 481px;
+    height: 322px;
+}
+.playFruitsImg:hover {
+    cursor: url(img/Cursor.svg), pointer;
+    transition: $trans;
+    scale: 1.1;
+}
+
+.playFruitsImg-mob {
+    display: none;
+}
