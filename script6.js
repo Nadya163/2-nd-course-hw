@@ -16,13 +16,13 @@
 // strAndArr(['Сорока', 'Дом', 'Сор', 'Иррациональный', 'Соловей', 'Табурет'], 'со');
 
 //// Вариант 2
-function filterByPrefix(arr, prefix) {
-    const regex = new RegExp(`^${prefix}`, "i");
-    return arr.filter((str) => regex.test(str));
-  }
+// function filterByPrefix(arr, prefix) {
+//     const regex = new RegExp(`^${prefix}`, "i");
+//     return arr.filter((str) => regex.test(str));
+//   }
   
-  filterByPrefix(["Рука", "Жук", "Конек", "Карусель", "Дубинка", "Каблук"],"ка");
-  console.log(filterByPrefix(["Рука", "Жук", "Конек", "Карусель", "Дубинка", "Каблук"],"ка"));
+//   filterByPrefix(["Рука", "Жук", "Конек", "Карусель", "Дубинка", "Каблук"],"ка");
+//   console.log(filterByPrefix(["Рука", "Жук", "Конек", "Карусель", "Дубинка", "Каблук"],"ка"));
 
 // Задание 3
 // num = Math.floor(32.58884);

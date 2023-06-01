@@ -48,6 +48,7 @@
         width: 343px;
     }
 
+    // Игра 1
     .play {
         &-box{
             gap: 64px;
@@ -55,7 +56,13 @@
             padding-bottom: 85px;
             flex-wrap: wrap;
         }
-             &__text {
+        &__info {
+            width: 343px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__text {
             font-size: 32px;
             line-height: 39px;
             display: flex;
@@ -86,5 +93,10 @@
         display: block;
         width: 344px;
         height: 236px;
+    }
+    .play-mob:hover {
+        cursor: url(img/Cursor.svg), pointer;
+        transition: $trans;
+        scale: 1.1;
     }
 }
