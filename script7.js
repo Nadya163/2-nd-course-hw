@@ -25,16 +25,16 @@
 //     }
 //     return result;
 // }
-    
+
 // console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
-    
+
 // const people = [
 //     {name: 'Глеб', gender: 'male'},
 //     {name: 'Анна', gender: 'female'},
 //     {name: 'Олег', gender: 'male'},
 //     {name: 'Оксана', gender: 'female'}
 // ];
-    
+
 // console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 //Задача 3
@@ -52,10 +52,34 @@
 // console.log(intervalId);
 
 //Задача 4
-function delayForSecond(callback) {
-    setTimeout(callback, 1000);
+// function delayForSecond(callback) {
+//     setTimeout(callback, 1000);
+// }
+
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
+
+//Задача 5
+// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
+// а затем вызывает переданный колбэк
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) {
+            cb();
+        }
+    }, 1000)
 }
 
-delayForSecond(function () {
-  console.log('Привет, Глеб!');
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond(() => {
+    sayHi('Глеб');
 })
