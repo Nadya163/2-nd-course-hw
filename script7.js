@@ -38,15 +38,24 @@
 // console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 //Задача 3
-let timer = 0;
+// let timer = 0;
 
-const intervalId = setInterval(() => {
-  console.log(new Date().toLocaleString());
-  timer++;
-  if (timer === 10) {
-    clearInterval (intervalId);
-    console.log("Прошло 30 секунд");
-  }
-}, 3000);
+// const intervalId = setInterval(() => {
+//   console.log(new Date().toLocaleString());
+//   timer++;
+//   if (timer === 10) {
+//     clearInterval (intervalId);
+//     console.log("Прошло 30 секунд");
+//   }
+// }, 3000);
 
-console.log(intervalId);
+// console.log(intervalId);
+
+//Задача 4
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
