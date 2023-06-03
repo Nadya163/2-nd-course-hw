@@ -9,30 +9,44 @@
 //  console.log(people.sort((a, b) => a.age - b.age));
 
 //Задание 2
-function isPositive(num) {
-    return num > 0;
-}
-function isMale(people) {
-    return people.gender === 'male';
-}
-function filter(arr, ruleFunction) {
-    const result = [];
-    for (let i = 0; i < arr.length; i++) {
-      const item = arr[i];
-      if (ruleFunction(item)) {
-        result.push(item);
-      }
-    }
-    return result;
-}
+// function isPositive(num) {
+//     return num > 0;
+// }
+// function isMale(people) {
+//     return people.gender === 'male';
+// }
+// function filter(arr, ruleFunction) {
+//     const result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//       const item = arr[i];
+//       if (ruleFunction(item)) {
+//         result.push(item);
+//       }
+//     }
+//     return result;
+// }
     
-console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
     
-const people = [
-    {name: 'Глеб', gender: 'male'},
-    {name: 'Анна', gender: 'female'},
-    {name: 'Олег', gender: 'male'},
-    {name: 'Оксана', gender: 'female'}
-];
+// const people = [
+//     {name: 'Глеб', gender: 'male'},
+//     {name: 'Анна', gender: 'female'},
+//     {name: 'Олег', gender: 'male'},
+//     {name: 'Оксана', gender: 'female'}
+// ];
     
-console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+// console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+//Задача 3
+let timer = 0;
+
+const intervalId = setInterval(() => {
+  console.log(new Date().toLocaleString());
+  timer++;
+  if (timer === 10) {
+    clearInterval (intervalId);
+    console.log("Прошло 30 секунд");
+  }
+}, 3000);
+
+console.log(intervalId);
